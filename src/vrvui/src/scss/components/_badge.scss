@@ -1,0 +1,19 @@
+.badge {
+  background-color: #ff4949;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.is-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+}

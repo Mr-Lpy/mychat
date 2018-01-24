@@ -29,5 +29,7 @@ module.exports = {
     "semi": [0, "always"],//语句强制分号结尾
     "no-unused-vars": [0, {"vars": "all", "args": "after-used"}],//不能有声明后未被使用的变量或参数
     "space-before-function-paren": [0, "always"],//函数定义时括号前面要不要有空格
+    "eol-last": 0,//文件以单一的换行符结束
+    "no-trailing-spaces": 0,//一行结束后面不要有空格
   }
 }

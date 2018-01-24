@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import vrvui from './vrvui/src';
 
 Vue.config.productionTip = false
-
+Vue.use(vrvui);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

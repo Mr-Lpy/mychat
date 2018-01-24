@@ -15,6 +15,7 @@ export default {
 
 <style lang="scss">
   @import './assets/style/reset.scss';
+  @import './vrvui/src/scss/vrvui-build.scss';
 
 #app {
   height: 100%;

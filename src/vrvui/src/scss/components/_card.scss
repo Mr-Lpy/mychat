@@ -1,0 +1,120 @@
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin flexs {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexJustify($n) {
+  -moz-justify-content: $n;
+  -webkit-justify-content: $n;
+  justify-content: $n;
+}
+
+@mixin flexAlign($n) {
+  -webkit-box-align: $n;
+  -moz-align-items: $n;
+  -webkit-align-items: $n;
+  align-items: $n;
+}
+
+@mixin flexNum($n) {
+  -webkit-box-flex: $n;
+  -webkit-flex: $n;
+  -ms-flex: $n;
+  flex: $n;
+}
+
+.card {
+  width: 100%;
+  box-shadow: none;
+  background: none;
+  .card-content {
+    &.default-content {
+      height: 3.5rem;
+      padding: 0.5rem;
+    }
+  }
+  .media {
+    display: -webkit-box;
+  }
+  &.card-disabled {
+    pointer-events: none;
+  }
+}
+
+.title:not(.is-spaced)+.subtitle {
+  margin-top: -1.2rem;
+}
+
+.card-active {
+  background: #ebebeb;
+}
+
+.card:hover {
+  background: #ebebeb;
+}
+
+.media-content {
+  @include flexs;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  position: relative;
+  @include flexAlign(center);
+  @include flexJustify(space-around);
+  @include flexNum(1);
+  height: -webkit-fill-available;
+}
+
+.title {
+  width: 100%;
+  @include flexs;
+  @include flexJustify(space-between);
+  font-weight: 500;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: normal;
+  .title-main {
+    width: 75%;
+    @include ellipsis;
+  }
+}
+
+.subtitle {
+  width: 100%;
+  @include flexs;
+  font-size: 0.7rem;
+  color: #767676;
+  margin-top: -1.5rem;
+  min-height: 0.75rem;
+  .contents {
+    width: 82%;
+    @include ellipsis;
+  }
+}
+
+.media-left {
+  height: -webkit-fill-available;
+  @include flexs;
+  @include flexAlign(center);
+}
+
+.media-right {
+  @include flexs;
+  width: 40px;
+  height: -webkit-fill-available;
+}
