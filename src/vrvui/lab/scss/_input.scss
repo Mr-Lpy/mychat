@@ -1,0 +1,59 @@
+@import "_var.scss";
+
+.v-input {
+  display: flex;
+  width: 100%;
+  &.normal {
+    border: $--border;
+    border-radius: $--border-radius;
+  }
+  &.none-border {
+    border: none;
+  }
+  &.line-border {
+    border-bottom: $--border;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  &.v-input-normal {
+    border-color: $--input-normal;
+  }
+  &.v-input-success {
+    border-color: $--input-success;
+  }
+  &.v-input-error {
+    border-color: $--input-error;
+  }
+  &.v-input-warning {
+    border-color: $--input-waring;
+  }
+  &.v-input-focus {
+    border-color: $--input-normal-hover;
+  }
+  &:hover {
+    border-color: $--input-normal-hover;
+  }
+
+  .v-input-prepend, .v-input-append {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .v-input-inner {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: $--input-font-normal;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    &::-webkit-input-placeholder {
+      font-size: $--input-font-normal;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'vrvui-icons';
+  src:  url('../fonts/fonts/vrvui-icons.eot?fxkje');
+  src:  url('../fonts/fonts/vrvui-icons.eot?fxkje#iefix') format('embedded-opentype'),
+    url('../fonts/fonts/vrvui-icons.ttf?fxkje') format('truetype'),
+    url('../fonts/fonts/vrvui-icons.woff?fxkje') format('woff'),
+    url('../fonts/fonts/vrvui-icons.svg?fxkje#vrvui-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="v-icon-"], [class*=" v-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vrvui-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.v-icon-clear:before {
+  content: "\e904";
+}
+.v-icon-close:before {
+  content: "\e905";
+}
+.v-icon-loading:before {
+  content: "\e906";
+}
+.v-icon-max:before {
+  content: "\e907";
+}
+.v-icon-min:before {
+  content: "\e908";
+}
+.v-icon-refresh:before {
+  content: "\e909";
+}
+.v-icon-country:before {
+  content: "\e900";
+  color: #8a8a8a;
+}
+.v-icon-password:before {
+  content: "\e901";
+  color: #8a8a8a;
+}
+.v-icon-phone:before {
+  content: "\e902";
+  color: #8a8a8a;
+}
+.v-icon-server:before {
+  content: "\e903";
+  color: #8a8a8a;
+}
+
+.v-spin {
+  /*animation: spin 1s linear infinite;*/
+  -webkit-animation: spin 1s linear infinite;/*鼠标hover时，i图标旋转,infinite表示动画无限循环*/
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*@-webkit-keyframes spin { !*兼容性写法。spin是关键帧的动画名称*!*/
+  /*from { !*动画起始状态*!*/
+    /*-webkit-transform: rotate(0deg);*/
+  /*}*/
+  /*to { !*动画结束状态*!*/
+    /*-webkit-transform: rotate(360deg);*/
+  /*}*/
+/*}*/
+/*@keyframes spin {*/
+  /*from {*/
+    /*transform: rotate(0deg);*/
+  /*}*/
+  /*to {*/
+    /*transform: rotate(360deg);*/
+  /*}*/
+/*}*/
