@@ -25,12 +25,11 @@
 
 <style lang="scss" rel="stylesheet/scss" scoped>
   .auth {
-    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 960px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     background: url("../../assets/images/auth/background.png") no-repeat;
     position: relative;
 

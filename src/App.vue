@@ -30,7 +30,9 @@ export default {
   align-items: center;
 }
   .app-wrapper {
-    border-radius: 4px;
+    width: 960px;
+    height: 600px;
+    /*border-radius: 4px;*/
     box-shadow: 0 0 10px #292929;
   }
 </style>

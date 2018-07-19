@@ -48,6 +48,7 @@
     methods: {
       onLogin() {
         console.log('in login');
+        this.$router.push({path: '/Main'});
       }
     }
   }
